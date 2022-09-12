@@ -125,7 +125,26 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+/* amazon section start */
+.amazon{ border: 2px solid #BEBEBE; }
+.amazon .wrapper{ width: 100%; }
 
+.heading{
+  font-size: 35px;
+  color: #6169D0 ;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-top: 45px ;
+  padding-left: 45px;
+}
+
+.amazon .wrapper h3{
+  font-size: 27px;
+  color: #6169D0;
+  padding: 6px 0 13px 45px;
+}
+
+/* amazon section end */
 
 
 
