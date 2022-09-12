@@ -143,6 +143,7 @@ li {
   color: #6169D0;
   padding: 6px 0 13px 45px;
 }
+.wrapper h3 span{ text-transform: uppercase; }
 
 /* amazon section end */
 
