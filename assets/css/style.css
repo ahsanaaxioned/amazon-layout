@@ -105,12 +105,19 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+.navbar{
+  display: flex;
+  padding: 21px 50px;
+  align-items: center;
+}
 
-
-
-
-
-
+.navbar h1{
+  font-size: 25px;
+  color: #6169D0 ;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
 /*=================================
   Header styling ends here
 =================================*/  
