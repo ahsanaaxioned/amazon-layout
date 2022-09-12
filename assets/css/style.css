@@ -138,12 +138,24 @@ li {
   padding-left: 45px;
 }
 
+.heading span{ text-transform: uppercase; }
+
 .amazon .wrapper h3{
   font-size: 27px;
   color: #6169D0;
   padding: 6px 0 13px 45px;
 }
+
 .wrapper h3 span{ text-transform: uppercase; }
+
+.content p{
+  font-size: 27px;
+  color: #6169D0;
+  padding: 13px 0 10px 45px;
+}
+
+
+
 
 /* amazon section end */
 
