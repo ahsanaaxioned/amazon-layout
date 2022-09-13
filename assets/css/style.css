@@ -432,21 +432,18 @@ li {
   color: #fff;
 }
 
-/* amazon section end */
-/*  */
 .heading {
   font-size: 35px;
   color: #6169D0;
   font-weight: 600;
   text-transform: capitalize;
-  padding-top: 45px;
+  padding-top: 37px;
 }
 
 .but {
   font-size: 28px;
   color: #DADCE0;
   text-transform: capitalize;
-  /* position: relative; */
 }
 
 .but::before {
@@ -475,7 +472,7 @@ li {
   bottom: 21px;
 }
 
-/*  */
+/* amazon section end */
 
 
 
