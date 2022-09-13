@@ -244,7 +244,6 @@ li {
   flex-basis: 31%;
   position: relative;
   background-color: #6169D0;
-  padding-top: 70px;
 }
 
 .amazon .wrapper .heading {
@@ -320,26 +319,30 @@ li {
 
 .left::before {
   content: "\3c";
-  position: absolute;
-  font-family: "FontAwesome";
-  text-indent: 0;
-  left: 20px;
-  top: 50%;
-  font-size: 60px;
-  color: #fff;
-  transform: translate(0, -50%);
+    font-family: "FontAwesome";
+    text-indent: 0;
+    float: right;
+    font-size: 60px;
+    color: #fff;
+    margin: 18px;
+}
+
+.left:hover::before{
+  color: #898989;
+}
+
+.right:hover::before{
+  color: #898989;
 }
 
 .right::before {
-  position: absolute;
-  content: "\3e";
-  font-family: "FontAwesome";
-  text-indent: 0;
-  top: 50%;
-  right: 20px;
-  font-size: 60px;
-  color: #fff;
-  transform: translate(0, -50%);
+      content: "\3e";
+      font-family: "FontAwesome";
+      text-indent: 0;
+      float: left;
+      font-size: 60px;
+      color: #fff;
+      margin: 18px;
 }
 
 .button {
@@ -366,8 +369,21 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+.slide-control{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .para2 {
   font-size: 20px;
   color: #DADCE0;
@@ -390,6 +406,14 @@ li {
   font-weight: 600;
   text-align: center;
   text-transform: capitalize;
+}
+
+.icon-list{
+  display: flex;
+}
+
+.icon-list2{
+  display: flex;
 }
 
 .icon {
@@ -441,20 +465,22 @@ li {
 }
 
 .but {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 28px;
   color: #DADCE0;
   text-transform: capitalize;
 }
 
 .but::before {
+  margin-right: 10px;
   content: "";
   width: 90px;
   height: 2px;
   background-color: #9EA4D1;
   display: block;
-  position: absolute;
-  left: -103px;
-  bottom: 21px;
+ 
 }
 
 .slide-list li:nth-child(3) {
@@ -467,9 +493,7 @@ li {
   height: 2px;
   background-color: #9EA4D1;
   display: block;
-  position: absolute;
-  right: -103px;
-  bottom: 21px;
+  margin-left: 10px;
 }
 /* amazon section end */
 /* insider section start */
@@ -484,7 +508,7 @@ li {
 }
 
 .insider-list li figure{
-  padding: 20px;
+  padding: 18px;
 }
 
 .insider-list li figure img{ 
@@ -498,6 +522,11 @@ li {
   font-weight: 600;
   text-align: justify;
   padding: 7px;
+}
+.insider-list li p{
+  font-size: 15px;
+  color: #9A9A9A;
+  text-align: justify;
 }
 
 /* insider section end */
