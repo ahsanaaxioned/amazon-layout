@@ -471,8 +471,36 @@ li {
   right: -103px;
   bottom: 21px;
 }
-
 /* amazon section end */
+/* insider section start */
+.insider-list{ 
+  display: flex;
+  padding: 20px;
+ }
+
+.insider-list li{
+  flex-basis: 33%;
+  padding: 10px;
+}
+
+.insider-list li figure{
+  padding: 20px;
+}
+
+.insider-list li figure img{ 
+  width: auto;
+}
+
+
+.caption{
+  font-size: 28px;
+  color: #3FB48C;
+  font-weight: 600;
+  text-align: justify;
+  padding: 7px;
+}
+
+/* insider section end */
 
 
 
