@@ -244,9 +244,10 @@ li {
   flex-basis: 31%;
   position: relative;
   background-color: #6169D0;
+  padding-top: 70px;
 }
 
-.heading {
+.amazon .wrapper .heading {
   font-size: 35px;
   color: #6169D0;
   font-weight: 600;
@@ -284,9 +285,9 @@ li {
 }
 
 .btn button {
-  font-size: 22px;
+  font-size: 21px;
   color: #DEE4E2;
-  padding: 16px;
+  padding: 19px;
   background-color: #3DB38D;
   border: none;
   margin: 0 9px;
@@ -294,11 +295,22 @@ li {
   font-weight: 600;
 }
 
-.btn { padding: 32px 32px 32px 36px; }
+.btn {
+  padding: 32px 32px 32px 36px;
+  display: flex;
+}
 
-.btn button:hover{
+.btn1 {
+  flex-basis: 30%;
+}
+
+.btn2 {
+  flex-basis: 70%;
+}
+
+.btn button:hover {
   color: #3DB38D;
-  background-color:#DEE4E2 ;
+  background-color: #DEE4E2;
 }
 
 .left,
@@ -311,12 +323,10 @@ li {
   position: absolute;
   font-family: "FontAwesome";
   text-indent: 0;
-  left: 11px;
+  left: 20px;
   top: 50%;
-  /* float: left; */
   font-size: 60px;
-  /* color: #fff; */
-  color: red;
+  color: #fff;
   transform: translate(0, -50%);
 }
 
@@ -325,20 +335,18 @@ li {
   content: "\3e";
   font-family: "FontAwesome";
   text-indent: 0;
-  /* float: right; */
   top: 50%;
-  right: 11px;
+  right: 20px;
   font-size: 60px;
-  /* color: #fff; */
-  color: red;
+  color: #fff;
   transform: translate(0, -50%);
 }
 
 .button {
   position: absolute;
-  bottom: 12%;
+  bottom: 6%;
   left: 50%;
-  transform: translate(-50%, -12%);
+  transform: translate(-50%, -6%);
 }
 
 .button li button {
@@ -353,24 +361,121 @@ li {
   background-color: #E5E5E4;
 }
 
-.slide-list li p{
-  font-size: 25px;
+.slide-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.para2 {
+  font-size: 20px;
   color: #DADCE0;
-  padding: 10px 0 10px 30px;
+  padding: 8px 0;
   text-align: center;
 }
 
-.slide-list li p span{
-  font-size: 28px;
+.slide-list .emp {
+  text-transform: capitalize;
+  font-size: 20px;
+  color: #DADCE0;
+  padding: 8px 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.slide-list li p span {
+  font-size: 35px;
   color: #DADCE0;
   font-weight: 600;
   text-align: center;
+  text-transform: capitalize;
 }
 
+.icon {
+  text-indent: -9999px;
+}
 
+.icon2 {
+  text-indent: -9999px;
+}
+
+.icon::before {
+  content: "\f183";
+  font-family: "FontAwesome";
+  text-indent: 0;
+  float: right;
+  font-size: 25px;
+  color: #9197D9;
+  padding: 15px 4px;
+}
+
+.icon2::before {
+  content: "\f183";
+  font-family: "FontAwesome";
+  text-indent: 0;
+  float: right;
+  font-size: 25px;
+  color: #9197D9;
+  padding: 15px 4px;
+}
+
+.icon:nth-child(1)::before {
+  background: linear-gradient(to right, #fff 50%, #9197D9 50%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.icon2:nth-child(1)::before,
+.icon2:nth-child(2)::before,
+.icon2:nth-child(3)::before {
+  color: #fff;
+}
 
 /* amazon section end */
+/*  */
+.heading {
+  font-size: 35px;
+  color: #6169D0;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-top: 45px;
+}
 
+.but {
+  font-size: 28px;
+  color: #DADCE0;
+  text-transform: capitalize;
+  /* position: relative; */
+}
+
+.but::before {
+  content: "";
+  width: 90px;
+  height: 2px;
+  background-color: #9EA4D1;
+  display: block;
+  position: absolute;
+  left: -103px;
+  bottom: 21px;
+}
+
+.slide-list li:nth-child(3) {
+  position: relative;
+}
+
+.but::after {
+  content: "";
+  width: 90px;
+  height: 2px;
+  background-color: #9EA4D1;
+  display: block;
+  position: absolute;
+  right: -103px;
+  bottom: 21px;
+}
+
+/*  */
 
 
 
