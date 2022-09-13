@@ -282,14 +282,6 @@ li {
   color: #3DB38D;
 }
 
-.control {
-  display: none;
-}
-
-.active-control {
-  display: block;
-}
-
 .btn button {
   font-size: 22px;
   color: #DEE4E2;
@@ -322,7 +314,8 @@ li {
   top: 50%;
   /* float: left; */
   font-size: 60px;
-  color: #fff;
+  /* color: #fff; */
+  color: red;
   transform: translate(0, -50%);
 }
 
@@ -335,7 +328,8 @@ li {
   top: 50%;
   right: 11px;
   font-size: 60px;
-  color: #fff;
+  /* color: #fff; */
+  color: red;
   transform: translate(0, -50%);
 }
 
