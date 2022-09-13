@@ -497,18 +497,24 @@ li {
 }
 /* amazon section end */
 /* insider section start */
+.connect{
+  border: 2px solid #BEBEBE;
+  border-top: none;
+}
+
 .insider-list{ 
   display: flex;
-  padding: 20px;
+  padding: 15px;
  }
 
 .insider-list li{
   flex-basis: 33%;
-  padding: 10px;
+  padding: 50px;
 }
 
-.insider-list li figure{
-  padding: 18px;
+.insider-list li:nth-child(2)p{
+  color: #2a2727;
+  font-size: 18px;
 }
 
 .insider-list li figure img{ 
@@ -521,13 +527,24 @@ li {
   color: #3FB48C;
   font-weight: 600;
   text-align: justify;
-  padding: 7px;
+  text-transform: capitalize;
 }
 .insider-list li p{
   font-size: 15px;
-  color: #9A9A9A;
+  color: #717171;
   text-align: justify;
+  text-transform: capitalize;
 }
+
+.rating a{ text-indent: -9999px; }
+
+.rating a::before{
+  content: "\f005";
+  text-indent: 0;
+  font-family: "FontAwesome";
+  float: left;
+}
+
 
 /* insider section end */
 
