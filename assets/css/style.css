@@ -183,6 +183,7 @@ sub {
 body {
   box-sizing: border-box;
   font-family: sans-serif;
+  overflow: hidden;
 }
 
 a {
@@ -496,7 +497,7 @@ li {
   margin-left: 10px;
 }
 /* amazon section end */
-/* insider section start */
+/* connect section start */
 .connect{
   border: 2px solid #BEBEBE;
   border-top: none;
@@ -505,6 +506,7 @@ li {
 .insider-list{ 
   display: flex;
   padding: 15px;
+  /* flex-wrap: wrap; */
  }
 
 .insider-list li{
@@ -512,28 +514,31 @@ li {
   padding: 50px;
 }
 
-.insider-list li:nth-child(2)p{
+.insider-list li:nth-child(1) figure + p,
+.insider-list li:nth-child(2) figure + p,
+.insider-list li:nth-child(3) figure + p{
   color: #2a2727;
   font-size: 18px;
 }
 
-.insider-list li figure img{ 
-  width: auto;
+.insider-list li figure{
+  width: 66%;
+  margin: 0 auto;
 }
-
-
 .caption{
   font-size: 28px;
   color: #3FB48C;
   font-weight: 600;
-  text-align: justify;
+  text-align: center;
   text-transform: capitalize;
+  padding: 4px;
 }
 .insider-list li p{
   font-size: 15px;
   color: #717171;
-  text-align: justify;
+  text-align: center;
   text-transform: capitalize;
+  padding: 4px;
 }
 
 .rating a{ text-indent: -9999px; }
@@ -545,8 +550,37 @@ li {
   float: left;
 }
 
+.rating{
+  display: flex;
+  justify-content: center;
+  padding: 7px;
+}
 
-/* insider section end */
+.rating a:nth-child(4)::before{
+   color: #dfdfdf;
+  }
+/* connect section end */
+/* work section start */
+.work{
+  border: 2px solid #BEBEBE;
+  border-top: none;
+}
+
+.work-list{
+  display: flex;
+}
+
+.work-list li a{
+  text-indent: -9999px;
+}
+
+.work-list li a::before{
+  content: "\f002";
+  text-indent: 0;
+  float: left;
+  font-family: "FontAwesome";
+}
+/* work section end */
 
 
 
