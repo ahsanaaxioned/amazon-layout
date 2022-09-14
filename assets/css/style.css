@@ -320,30 +320,30 @@ li {
 
 .left::before {
   content: "\3c";
-    font-family: "FontAwesome";
-    text-indent: 0;
-    float: right;
-    font-size: 60px;
-    color: #fff;
-    margin: 18px;
+  font-family: "FontAwesome";
+  text-indent: 0;
+  float: right;
+  font-size: 60px;
+  color: #fff;
+  margin: 18px;
 }
 
-.left:hover::before{
+.left:hover::before {
   color: #898989;
 }
 
-.right:hover::before{
+.right:hover::before {
   color: #898989;
 }
 
 .right::before {
-      content: "\3e";
-      font-family: "FontAwesome";
-      text-indent: 0;
-      float: left;
-      font-size: 60px;
-      color: #fff;
-      margin: 18px;
+  content: "\3e";
+  font-family: "FontAwesome";
+  text-indent: 0;
+  float: left;
+  font-size: 60px;
+  color: #fff;
+  margin: 18px;
 }
 
 .button {
@@ -376,7 +376,7 @@ li {
   transform: translate(-50%, -50%);
 }
 
-.slide-control{
+.slide-control {
   width: 100%;
   position: absolute;
   top: 50%;
@@ -385,6 +385,7 @@ li {
   justify-content: space-between;
   align-items: center;
 }
+
 .para2 {
   font-size: 20px;
   color: #DADCE0;
@@ -409,11 +410,11 @@ li {
   text-transform: capitalize;
 }
 
-.icon-list{
+.icon-list {
   display: flex;
 }
 
-.icon-list2{
+.icon-list2 {
   display: flex;
 }
 
@@ -481,7 +482,7 @@ li {
   height: 2px;
   background-color: #9EA4D1;
   display: block;
- 
+
 }
 
 .slide-list li:nth-child(3) {
@@ -496,36 +497,38 @@ li {
   display: block;
   margin-left: 10px;
 }
+
 /* amazon section end */
 /* connect section start */
-.connect{
+.connect {
   border: 2px solid #BEBEBE;
   border-top: none;
 }
 
-.insider-list{ 
+.insider-list {
   display: flex;
   padding: 15px;
   /* flex-wrap: wrap; */
- }
+}
 
-.insider-list li{
+.insider-list li {
   flex-basis: 33%;
   padding: 50px;
 }
 
-.insider-list li:nth-child(1) figure + p,
-.insider-list li:nth-child(2) figure + p,
-.insider-list li:nth-child(3) figure + p{
+.insider-list li:nth-child(1) figure+p,
+.insider-list li:nth-child(2) figure+p,
+.insider-list li:nth-child(3) figure+p {
   color: #2a2727;
   font-size: 18px;
 }
 
-.insider-list li figure{
+.insider-list li figure {
   width: 66%;
   margin: 0 auto;
 }
-.caption{
+
+.caption {
   font-size: 28px;
   color: #3FB48C;
   font-weight: 600;
@@ -533,7 +536,8 @@ li {
   text-transform: capitalize;
   padding: 4px;
 }
-.insider-list li p{
+
+.insider-list li p {
   font-size: 15px;
   color: #717171;
   text-align: center;
@@ -541,46 +545,109 @@ li {
   padding: 4px;
 }
 
-.rating a{ text-indent: -9999px; }
+.rating a {
+  text-indent: -9999px;
+}
 
-.rating a::before{
+.rating a::before {
   content: "\f005";
   text-indent: 0;
   font-family: "FontAwesome";
   float: left;
 }
 
-.rating{
+.rating {
   display: flex;
   justify-content: center;
   padding: 7px;
 }
 
-.rating a:nth-child(4)::before{
-   color: #dfdfdf;
-  }
+.rating a:nth-child(4)::before {
+  color: #dfdfdf;
+}
+
 /* connect section end */
 /* work section start */
-.work{
+.work {
   border: 2px solid #BEBEBE;
   border-top: none;
 }
 
-.work-list{
+.work-list {
   display: flex;
+  padding: 22px;
 }
 
-.work-list li a{
+.work-list li a {
   text-indent: -9999px;
+  border-radius: 50%;
+  background: #6069D0;
+  border-radius: 50%;
+  margin: 20px auto;
 }
 
-.work-list li a::before{
+.work-list .search::before {
   content: "\f002";
   text-indent: 0;
   float: left;
   font-family: "FontAwesome";
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.work-list .calender::before {
+  content: "\f073";
+  text-indent: 0;
+  float: left;
+  font-family: "FontAwesome";
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.work-list .message::before {
+  content: "\f0e6";
+  text-indent: 0;
+  float: right;
+  font-family: "FontAwesome";
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.work-list li{ 
+  text-align: center;
+  flex-basis: 33%;
+}
+.work-list li span{
+  font-size: 23px;
+  color: #656565;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.work-list li p{
+  font-size: 20px;
+  color: #717171;
+  padding: 15px;
+
 }
 /* work section end */
+/* testimonial section start */
+.test-list li:nth-child(2) p{
+  display: none;
+}
+/* testimonial section end */
 
 
 
