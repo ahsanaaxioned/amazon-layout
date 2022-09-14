@@ -285,7 +285,7 @@ li {
 }
 
 .btn button {
-  font-size: 21px;
+  font-size: 17px;
   color: #DEE4E2;
   padding: 19px;
   background-color: #3DB38D;
@@ -625,32 +625,118 @@ li {
   color: #fff;
 }
 
-.work-list li{ 
+.work-list li {
   text-align: center;
   flex-basis: 33%;
 }
-.work-list li span{
-  font-size: 23px;
+
+.work-list li span {
+  font-size: 20px;
   color: #656565;
   text-transform: capitalize;
   font-weight: 600;
 }
 
-.work-list li p{
+.work-list li p {
   font-size: 20px;
   color: #717171;
   padding: 15px;
 
 }
+
 /* work section end */
 /* testimonial section start */
-.test-list .par{
+.test{ background-color: #565EBA; }
+
+.test-list .par {
   display: none;
 }
 
-.test-list .control{
-  display: block;
+.test-list{
+  width: 90%;
+  margin: 0 auto;
 }
+
+.test-list .control {
+  display: block;
+  line-height: 30px;
+  font-size: 20px;
+  color: #e3e3eb;
+}
+
+.test .heading{ color: #e3e3eb; }
+
+.test-list li {
+  padding: 35px;
+}
+
+.test-left,
+.test-right {
+  text-indent: -9999px;
+}
+
+.test-left::before {
+  content: "\3c";
+  font-family: "FontAwesome";
+  text-indent: 0;
+  float: right;
+  font-size: 90px;
+  color: #d9dbe3;
+  margin: 8px;
+}
+
+.test-left:hover::before {
+  color: #898989;
+}
+
+.test-right:hover::before {
+  color: #898989;
+}
+
+.test-right::before {
+  content: "\3e";
+  font-family: "FontAwesome";
+  text-indent: 0;
+  float: left;
+  font-size: 90px;
+  color: #d9dbe3;
+  margin: 8px;
+}
+
+.test-slide {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonial{ position: relative; }
+
+.test-btn{
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.test-btn button{
+  border-radius: 50%;
+  background-color: #B2B3B2;
+  font-size: 17px;
+}
+
+.test-btn button:nth-child(4){
+  background-color: #fff;
+}
+
+.test-btn button:nth-child(1),
+.test-btn button:nth-child(2),
+.test-btn button:nth-child(3),
+.test-btn button:nth-child(4),
+.test-btn button:nth-child(5),
+.test-btn button:nth-child(6){text-indent: -9999px;}
+
 
 /* testimonial section end */
 
