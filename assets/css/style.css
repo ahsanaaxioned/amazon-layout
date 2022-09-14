@@ -644,9 +644,14 @@ li {
 }
 /* work section end */
 /* testimonial section start */
-.test-list li:nth-child(2) p{
+.test-list .par{
   display: none;
 }
+
+.test-list .control{
+  display: block;
+}
+
 /* testimonial section end */
 
 
