@@ -271,11 +271,13 @@ li {
 
 .para a { color: #3DB38D; }
 
+.para a:hover{ color: #000;}
+
 .btn button {
-  font-size: 17px;
-  color: #DEE4E2;
-  padding: 19px;
-  background-color: #3DB38D;
+  font-size: 23px;
+  color: #eff7f4;
+  padding: 19px 0;
+  background-color: #44b38f;
   border: none;
   margin: 0 9px;
   text-transform: uppercase;
@@ -283,8 +285,9 @@ li {
 }
 
 .btn {
-  padding: 32px 32px 32px 36px;
+  padding: 32px 0;
   display: flex;
+  margin: 0 31px;
 }
 
 .btn1 { flex-basis: 30%; }
@@ -297,14 +300,19 @@ li {
 }
 
 .left,
-.right { text-indent: -9999px; }
+.right { 
+  text-indent: -9999px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+ }
 
 .left::before {
-  content: "\3c";
+  content: "\f104";
   font-family: "FontAwesome";
   text-indent: 0;
   float: right;
-  font-size: 60px;
+  font-size: 90px;
   color: #fff;
   margin: 18px;
 }
@@ -313,11 +321,11 @@ li {
 .right:hover::before { color: #000; }
 
 .right::before {
-  content: "\3e";
+  content: "\f105";
   font-family: "FontAwesome";
   text-indent: 0;
   float: left;
-  font-size: 60px;
+  font-size: 90px;
   color: #fff;
   margin: 18px;
 }
@@ -335,9 +343,11 @@ li {
   background-color: #B1B2B1;
   border: none;
   margin: 0 2px;
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
 }
+
+.button li button:hover{ background-color: #fff; }
 
 .button li:nth-child(4) button { background-color: #E5E5E4; }
 
@@ -364,7 +374,7 @@ li {
 
 .para2 {
   font-size: 20px;
-  color: #DADCE0;
+  color: #eff1f7;
   padding: 8px 0;
   text-align: center;
 }
@@ -372,7 +382,7 @@ li {
 .slide-list .emp {
   text-transform: capitalize;
   font-size: 20px;
-  color: #DADCE0;
+  color: #eff1f7;
   padding: 8px 0;
   text-align: center;
   font-weight: 500;
@@ -380,11 +390,13 @@ li {
 
 .slide-list li p span {
   font-size: 35px;
-  color: #DADCE0;
+  color: #eff1f7;
   font-weight: 600;
   text-align: center;
   text-transform: capitalize;
 }
+
+.slide-list li { width: 100%;}
 
 .icon-list2 ,
 .icon-list { display: flex; }
@@ -436,15 +448,15 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 28px;
-  color: #DADCE0;
+  font-size: 20px;
+  color: #eff1f7;
   text-transform: capitalize;
 }
 
 .but::before {
   margin-right: 10px;
   content: "";
-  width: 90px;
+  width: 50%;
   height: 2px;
   background-color: #9EA4D1;
   display: block;
@@ -454,7 +466,7 @@ li {
 
 .but::after {
   content: "";
-  width: 90px;
+  width: 50%;
   height: 2px;
   background-color: #9EA4D1;
   display: block;
@@ -470,7 +482,7 @@ li {
 
 .insider-list {
   display: flex;
-  padding: 15px;
+  justify-content: space-evenly;
 }
 
 .insider-list li {
@@ -478,9 +490,7 @@ li {
   padding: 50px;
 }
 
-.insider-list li:nth-child(1) figure+p,
-.insider-list li:nth-child(2) figure+p,
-.insider-list li:nth-child(3) figure+p {
+.insider-list li:nth-child(1) figure + p {
   color: #2a2727;
   font-size: 18px;
 }
@@ -491,11 +501,11 @@ li {
 }
 
 .caption {
-  font-size: 28px;
+  font-size: 25px;
   color: #3FB48C;
   font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
   padding: 4px;
 }
 
@@ -514,6 +524,9 @@ li {
   text-indent: 0;
   font-family: "FontAwesome";
   float: left;
+  color: #555FBA;
+  font-size: 20px;
+  margin: 3px;
 }
 
 .rating {
@@ -522,7 +535,7 @@ li {
   padding: 7px;
 }
 
-.rating a:nth-child(4)::before { color: #dfdfdf; }
+.rating a:nth-child(4)::before { color: #e9e6e6; }
 
 /* connect section end */
 /* work section start */
@@ -533,7 +546,7 @@ li {
 
 .work-list {
   display: flex;
-  padding: 22px;
+  justify-content: space-evenly;
 }
 
 .work-list li a {
@@ -622,13 +635,21 @@ li {
 
 .test .heading { color: #e3e3eb; }
 
-.test-list li { padding: 35px; }
+.test-list li { 
+  padding: 35px 0;
+  text-align: center;
+ }
 
 .test-left,
-.test-right { text-indent: -9999px; }
+.test-right { 
+  text-indent: -9999px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+ }
 
 .test-left::before {
-  content: "\3c";
+  content: "\f104";
   font-family: "FontAwesome";
   text-indent: 0;
   float: right;
@@ -641,7 +662,7 @@ li {
 .test-right:hover::before{ color: #000; }
 
 .test-right::before {
-  content: "\3e";
+  content: "\f105";
   font-family: "FontAwesome";
   text-indent: 0;
   float: left;
