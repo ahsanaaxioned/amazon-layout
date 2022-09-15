@@ -208,7 +208,7 @@ li {
 =================================*/
 .navbar {
   display: flex;
-  padding: 21px 50px;
+  padding: 21px 33px;
   align-items: center;
 }
 
@@ -219,6 +219,7 @@ li {
   font-weight: 600;
   text-transform: uppercase;
   padding-left: 10px;
+  align-items: center;
 }
 
 .navbar figure{ padding-right: 15px ;}
@@ -262,7 +263,7 @@ li {
 .amazon .wrapper h3 {
   font-size: 22px;
   color: #6169D0;
-  padding: 6px 0 13px 45px;
+  padding: 6px 10px 13px 45px;
 }
 
 .wrapper h3 span { text-transform: uppercase; }
@@ -270,7 +271,7 @@ li {
 .content p {
   font-size: 22px;
   color: #6169D0;
-  padding: 13px 0 10px 45px;
+  padding: 13px 30px 10px 45px;
 }
 
 .content .para { color: #898989; }
@@ -855,9 +856,18 @@ li {
 /*media query for 481 -768px end here*/
 /*media query for 320 -480px starts here*/
 @media only screen and (min-width: 320px) and (max-width:480px) {
+  .navbar{ padding: 8px 33px; }
+
+  .navbar h1{ font-size: 18px;}
+
   .amazon .wrapper { flex-direction: column; }
 
-  .content p{ font-size: 21px; }
+  .amazon .wrapper h3 {
+    font-size: 18px;
+    padding: 6px 10px 13px 45px;
+  }
+
+  .content p{ font-size: 17px; }
   
   .heading{ font-size:23px ;}
 
